@@ -130,7 +130,7 @@
                 <Grid x:Name="GrdAnidado2">
                     <TextBlock x:Name="txtBlkEDBuscar" Text="Buscar" ToolTip="Buscar..." FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                     <Image x:Name="imgFDelete" Source="Img\FolderDelete.png" Width="50" Height="50" Margin="0,15,0,0"/>
-                    <Image x:Name="imgXEquis" Source="Img\equis-x.png" Width="25" Height="25" HorizontalAlignment="Right" Margin="0,0,0,4.59" VerticalAlignment="Bottom" d:LayoutOverrides="LeftMargin, RightMargin" RenderTransformOrigin="0.5,0.5">
+                    <Image x:Name="imgXEquis" Source="Img\equis-x.png" Width="25" Height="25" HorizontalAlignment="Right" Margin="0,0,0,4.59" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
