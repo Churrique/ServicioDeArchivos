@@ -116,5 +116,9 @@
   <ItemGroup>
     <Folder Include="Docs\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Parche-B.ico" />
+    <Resource Include="Img\Windows-Logo-1-B.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
