@@ -101,7 +101,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Row="0" Grid.Column="0">
                     <StackPanel VerticalAlignment="Top">
-                        <RadioButton x:Name="rdbEliminar" IsChecked="True" HorizontalAlignment="Left" Margin="20,0,0,0" Content="Eliminar un Directorio" Width="147" FontFamily="Calibri" FontSize="14" FontWeight="Bold" ToolTip="...click aquí si quiere Eliminar un Directorio..." Cursor="Hand"/>
+                        <RadioButton x:Name="rdbEliminar" IsChecked="True" HorizontalAlignment="Left" Margin="20,0,0,0" Content="Eliminar un Directorio" Width="147" FontFamily="Calibri" FontSize="14" FontWeight="Bold" ToolTip="...click aquí si quiere Eliminar un Directorio..." Cursor="Hand" Foreground="#FF0D69D8"/>
                         <RadioButton x:Name="rdbCopiar" HorizontalAlignment="Left" Margin="20,0,0,0"  Content="Copiar un Directorio" FontFamily="Calibri" FontSize="14" FontWeight="Bold" Width="147" ToolTip="...click aquí si quiere Copiar un Directorio..." Cursor="Hand"/>
                         <RadioButton x:Name="rdbMover" HorizontalAlignment="Left" Margin="20,0,0,0"  Content="Mover un Directorio" Width="147" FontFamily="Calibri" FontSize="14" FontWeight="Bold" ToolTip="...click aquí si quiere Mover un Directorio..." Cursor="Hand"/>
                     </StackPanel>
@@ -121,8 +121,8 @@
         </Grid>
         <Grid Grid.Row="2" Grid.Column="0" Margin="10">
             <StackPanel VerticalAlignment="Top">
-                <TextBlock x:Name="txtBlkDAEliminar" Margin="0,0,0,5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Directorio a Eliminar:" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri" FontSize="14" ToolTip="Directorio a Eliminar:...?"/>
-                <TextBox x:Name="txtDAEliminar" Margin="0,5,5,5" Height="22" TextWrapping="Wrap" Text="...Directorio a eliminar..." FontFamily="Calibri" FontWeight="Bold" ToolTip="...este es el directorio que se dispone a eliminar...!"/>
+                <TextBlock x:Name="txtBlkDAEliminar" Margin="0,0,0,5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Directorio a Eliminar:" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri" FontSize="14" ToolTip="Directorio a Eliminar:...?" Foreground="#FF0D69D8"/>
+                <TextBox x:Name="txtDAEliminar" Margin="0,5,5,5" Height="22" TextWrapping="Wrap" Text="...Directorio a eliminar..." FontFamily="Calibri" FontWeight="Bold" ToolTip="...este es el directorio que se dispone a eliminar...!" Foreground="#FF0D69D8"/>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1" Margin="5,0,5,10">
