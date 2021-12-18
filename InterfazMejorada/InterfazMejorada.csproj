@@ -120,5 +120,11 @@
     <Resource Include="Img\Parche-B.ico" />
     <Resource Include="Img\Windows-Logo-1-B.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\clock-REC.ico" />
+    <Resource Include="Img\clock-REC.png" />
+    <Resource Include="Img\clock.ico" />
+    <Resource Include="Img\clock.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
