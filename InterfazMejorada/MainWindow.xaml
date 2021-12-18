@@ -84,7 +84,7 @@
         </Grid.ColumnDefinitions>
         <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="10,0,10,20">
             <TextBlock x:Name="txtBlkDescripcion" Margin="10,10,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Text="A continuación indique que desea hacer con el servicio (Configuración Base):" ToolTip="A continuación indique que desea hacer con el servicio (Configuración Base):..." FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri" />
-            <ComboBox x:Name="cboIdioma" HorizontalAlignment="Right" VerticalAlignment="Top" Height="25.245" Width="187.298" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri" Cursor="Hand" ToolTip="Seleccione el idioma a visualizar..." Margin="0,5,0,0">
+            <ComboBox x:Name="cboIdioma" VerticalAlignment="Top" Height="25" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri" Cursor="Hand" ToolTip="Seleccione el idioma a visualizar..." Margin="585,5,0,0">
                 <ComboBoxItem Content="Español"/>
                 <ComboBoxItem Content="Ingles"/>
                 <ComboBoxItem Content="Checo"/>
@@ -102,8 +102,8 @@
                 <Grid Grid.Row="0" Grid.Column="0">
                     <StackPanel VerticalAlignment="Top">
                         <RadioButton x:Name="rdbEliminar" IsChecked="True" HorizontalAlignment="Left" Margin="20,0,0,0" Content="Eliminar un Directorio" Width="147" FontFamily="Calibri" FontSize="14" FontWeight="Bold" ToolTip="...click aquí si quiere Eliminar un Directorio..." Cursor="Hand" Foreground="#FF0D69D8"/>
-                        <RadioButton x:Name="rdbCopiar" HorizontalAlignment="Left" Margin="20,0,0,0"  Content="Copiar un Directorio" FontFamily="Calibri" FontSize="14" FontWeight="Bold" Width="147" ToolTip="...click aquí si quiere Copiar un Directorio..." Cursor="Hand"/>
-                        <RadioButton x:Name="rdbMover" HorizontalAlignment="Left" Margin="20,0,0,0"  Content="Mover un Directorio" Width="147" FontFamily="Calibri" FontSize="14" FontWeight="Bold" ToolTip="...click aquí si quiere Mover un Directorio..." Cursor="Hand"/>
+                        <RadioButton x:Name="rdbCopiar" HorizontalAlignment="Left" Margin="20,0,0,0"  Content="Copiar un Directorio" FontFamily="Calibri" FontSize="14" FontWeight="Bold" Width="147" ToolTip="...click aquí si quiere Copiar un Directorio..." Cursor="Hand" Foreground="#FFF07B06"/>
+                        <RadioButton x:Name="rdbMover" HorizontalAlignment="Left" Margin="20,0,0,0"  Content="Mover un Directorio" Width="147" FontFamily="Calibri" FontSize="14" FontWeight="Bold" ToolTip="...click aquí si quiere Mover un Directorio..." Cursor="Hand" Foreground="#FFF07B06"/>
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="1">
@@ -153,8 +153,8 @@
         </Grid>
         <Grid Grid.Row="3" Grid.Column="0">
             <StackPanel>
-                <TextBlock x:Name="txtBlkFuente" Margin="10,10,0,10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Indique la Fuente:" VerticalAlignment="Top" Cursor="Hand" ToolTip="Indique la Fuente:...? (El valor de este campo vale para las tres posibles acciones: Elimnar/Copiar/Mover)" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri" Height="18"/>
-                <TextBox x:Name="txtFuente" Margin="10,0,10,10" Height="22" TextWrapping="Wrap" Text="...Indique el directorio fuente..." FontFamily="Calibri" FontWeight="Bold" ToolTip="...indique el directorio desde dónde va a empezar a copiar o mover..."/>
+                <TextBlock x:Name="txtBlkFuente" Margin="10,10,0,10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Indique la Fuente:" VerticalAlignment="Top" Cursor="Hand" ToolTip="Indique la Fuente:...? (El valor de este campo vale para las tres posibles acciones: Elimnar/Copiar/Mover)" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri" Height="18" Foreground="#FFF07B06"/>
+                <TextBox x:Name="txtFuente" Margin="10,0,10,10" Height="22" TextWrapping="Wrap" Text="...Indique el directorio fuente..." FontFamily="Calibri" FontWeight="Bold" ToolTip="...indique el directorio desde dónde va a empezar a copiar o mover..." Foreground="#FFF07B06" Background="#FF4B4141"/>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="3" Grid.Column="1" Margin="5,0,5,5">
@@ -167,8 +167,8 @@
         </Grid>
         <Grid Grid.Row="4" Grid.Column="0">
             <StackPanel Margin="0,0,0,41">
-                <TextBlock x:Name="txtBlkDestino" Margin="10,10,0,10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Indique el Destino:" ToolTip="Indique el Destino:...? (El valor de este campo vale para las acciones: Copiar/Mover)" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri"/>
-                <TextBox x:Name="txtDestino" Margin="10,0,10,10" Height="22" TextWrapping="Wrap" Text="...Indique el directorio destino..." FontWeight="Bold" FontFamily="Calibri" VerticalAlignment="Top" ToolTip="...indique el directorio hacia dónde va a copiar o mover..." Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="txtBlkDestino" Margin="10,10,0,10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Indique el Destino:" ToolTip="Indique el Destino:...? (El valor de este campo vale para las acciones: Copiar/Mover)" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri" Foreground="#FFF07B06"/>
+                <TextBox x:Name="txtDestino" Margin="10,0,10,10" Height="22" TextWrapping="Wrap" Text="...Indique el directorio destino..." FontWeight="Bold" FontFamily="Calibri" VerticalAlignment="Top" ToolTip="...indique el directorio hacia dónde va a copiar o mover..." Grid.ColumnSpan="2" Foreground="#FFF07B06" Background="#FF4B4141"/>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="4" Grid.Column="1" Margin="5">

@@ -34,12 +34,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_496612FC5D75799F3068ABAD5191813D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7F04FC6B59214EAFBD2E85F14D9B7C00"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -47,6 +41,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7E1B2B9059E0F55A6EFA76767F499BA9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_496612FC5D75799F3068ABAD5191813D"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -67,6 +67,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -83,6 +99,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -285,24 +317,24 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:InterfazMejorada.Installer"
+        "ProductName" = "8:InstaladorDeInterfáz"
         "ProductCode" = "8:{7CA3ED19-4E9D-4205-B665-4D1805120B0F}"
-        "PackageCode" = "8:{98AAD531-BEE9-4B45-9AD8-A88052DB1D9C}"
+        "PackageCode" = "8:{AA31D01E-E697-457C-B0A6-CE7C38BE89BB}"
         "UpgradeCode" = "8:{B461ED36-D534-4027-8664-C135E755809E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:FALSE"
+        "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:Ms Visual Studio 2017"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:InterfazMejorada.Installer"
-        "Subject" = "8:"
+        "Title" = "8:Instalador de la Interfáz."
+        "Subject" = "8:Instalador de la Interfáz (mejorada). Permite manipular el servicio."
         "ARPCONTACT" = "8:TSU Jesús Acosta."
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:"
+        "ARPCOMMENTS" = "8:Instalador de la Interfáz."
         "ARPURLINFOABOUT" = "8:"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
@@ -808,7 +840,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7F04FC6B59214EAFBD2E85F14D9B7C00"
             {
-            "SourcePath" = "8:..\\InterfazMejorada\\obj\\Debug\\InterfazMejorada.exe"
+            "SourcePath" = "8:..\\InterfazMejorada\\obj\\Release\\InterfazMejorada.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_82AEC3A0C0364F3788655C173EA32066"

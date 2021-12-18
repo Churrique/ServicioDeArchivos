@@ -28,13 +28,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F7816D9B710681A4DAFF0CAEC1FDFC9C"
+        "OwnerKey" = "8:_542D3510C867459BAC78C49BB48A98CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_542D3510C867459BAC78C49BB48A98CF"
+        "OwnerKey" = "8:_F7816D9B710681A4DAFF0CAEC1FDFC9C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -94,6 +94,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -266,21 +274,21 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Instalador"
+        "ProductName" = "8:InstaladorDeServicio"
         "ProductCode" = "8:{E3534E21-2542-4A08-AEFA-C87E3A08FDC5}"
-        "PackageCode" = "8:{D486BE75-AB67-4C36-B6D6-4347F783222D}"
+        "PackageCode" = "8:{D3B66FBC-2054-41EA-9E11-D5A7BCC14851}"
         "UpgradeCode" = "8:{A0F5B0FE-F808-4457-87EC-CEFD350E1CE2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:FALSE"
+        "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:Ms Visual Studio 2017"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Instalador"
-        "Subject" = "8:"
+        "Title" = "8:Instalador del Servicio."
+        "Subject" = "8:Instalador del servicio."
         "ARPCONTACT" = "8:TSU Jesús Acosta."
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Instalador del Servicio."
@@ -789,7 +797,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_542D3510C867459BAC78C49BB48A98CF"
             {
-            "SourcePath" = "8:..\\ServicioMultiPropósito\\obj\\Debug\\ServicioMultiPropósito.exe"
+            "SourcePath" = "8:..\\ServicioMultiPropósito\\obj\\Release\\ServicioMultiPropósito.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_0C2EA0C8A3814F688DD13F5844B79D0E"
