@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InterfazMejorada"
         mc:Ignorable="d"
-        Title="Interfaz Gráfica del Servicio" Height="450" Width="800" WindowStartupLocation="CenterScreen" Background="White" Icon="Img/1487716856-user-help_81637.png" >
+        Title="Interfaz Gráfica del Servicio" Height="450" Width="800" WindowStartupLocation="CenterScreen" Background="White" Icon="Img/LogoAPP.ico" >
     <Window.Resources>
         <Storyboard x:Key="OnLoaded1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="imgXEquis">
@@ -91,22 +91,34 @@
             </ComboBox>
         </Grid>
         <Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="10,10,10,32.951">
-            <Grid x:Name="grd1Anidado">
+            <Grid x:Name="grd1Anidado" Margin="0,0,0,-20.951">
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Row="0" Grid.Column="0">
-                    <StackPanel VerticalAlignment="Top">
+                <Grid Grid.Row="0" Grid.Column="0" Margin="0,0,71,0">
+                    <StackPanel VerticalAlignment="Top" Margin="0,0,10,0">
                         <RadioButton x:Name="rdbEliminar" IsChecked="True" HorizontalAlignment="Left" Margin="20,0,0,0" Content="Eliminar un Directorio" Width="147" FontFamily="Calibri" FontSize="14" FontWeight="Bold" ToolTip="...click aquí si quiere Eliminar un Directorio..." Cursor="Hand" Foreground="#FF0D69D8"/>
                         <RadioButton x:Name="rdbCopiar" HorizontalAlignment="Left" Margin="20,0,0,0"  Content="Copiar un Directorio" FontFamily="Calibri" FontSize="14" FontWeight="Bold" Width="147" ToolTip="...click aquí si quiere Copiar un Directorio..." Cursor="Hand" Foreground="#FFF07B06"/>
                         <RadioButton x:Name="rdbMover" HorizontalAlignment="Left" Margin="20,0,0,0"  Content="Mover un Directorio" Width="147" FontFamily="Calibri" FontSize="14" FontWeight="Bold" ToolTip="...click aquí si quiere Mover un Directorio..." Cursor="Hand" Foreground="#FFF07B06"/>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Row="0" Grid.Column="1">
+                <Grid Grid.Row="0" Grid.Column="1" Margin="0,0,40,0">
+                    <StackPanel VerticalAlignment="Top" Margin="0">
+                        <TextBlock x:Name="txtBlkTemporizador" Text="Intervalo de ejecuion del servicio:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,5" TextWrapping="Wrap" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="14"></TextBlock>
+                        <Slider x:Name="slider" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="200" Value="5" TickPlacement="BottomRight" TickFrequency="5" Cursor="Hand" Minimum="1" Maximum="200" SmallChange="1" RenderTransformOrigin="-3,0" Delay="504" LargeChange="5" IsSnapToTickEnabled="True"/>
+                        <TextBox x:Name="txtValorSlider" Width="50" HorizontalAlignment="Right" TextAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,5,5" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="14" IsEnabled="False">
+                            <TextBox.Text>
+                                <Binding ElementName="slider" Path="Value"></Binding>
+                            </TextBox.Text>
+                        </TextBox>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="2">
                     <Button x:Name="btnProcesar" Content="Procesar" ToolTip="...click con el mouse para iniciar el proceso..." BorderBrush="#FF0877FB" FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri" Foreground="#FF14D0EE" Click="BtnProcesar_Click" Cursor="Hand">
                         <Button.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -161,7 +173,7 @@
             <Button x:Name="btnOpenFFolder" Cursor="Hand" Background="{x:Null}" BorderThickness="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Click="BtnOpenFFolder_Click" ToolTip="...click con el mouse para abrir el diálogo  deselección de carpeta...">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
                     <TextBlock x:Name="txtBlkFBuscar" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" Text="Buscar" ToolTip="Buscar..." FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri"/>
-                    <Image x:Name="imgFuente" Source="Img\openfile_11188.png" Width="50" Height="50" ToolTip="...click con el mouse para abrir el diálogo de busqueda..."/>
+                    <Image x:Name="imgFuente" Source="Img/FolderOpen.png" Width="50" Height="50" ToolTip="...click con el mouse para abrir el diálogo de busqueda..."/>
                 </StackPanel>
             </Button>
         </Grid>
@@ -175,7 +187,7 @@
             <Button x:Name="btnOpenDFolder" Margin="0,0,0,41" Cursor="Hand" Background="{x:Null}" BorderThickness="0" RenderTransformOrigin="0.5,0.5" Click="BtnOpenDFolder_Click" ToolTip="...click con el mouse para abrir el diálogo  deselección de carpeta...">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
                     <TextBlock x:Name="txtBlkDBuscar" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Buscar" Cursor="Hand" ToolTip="Buscar..." FontSize="14" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri"/>
-                    <Image x:Name="imgDestino" Source="Img\openfile_11188.png" Width="50" Height="50" RenderTransformOrigin="0.5,0.5" ToolTip="...click con el mouse para abrir el diálogo de busqueda..."/>
+                    <Image x:Name="imgDestino" Source="Img/FolderOpen.png" Width="50" Height="50" RenderTransformOrigin="0.5,0.5" ToolTip="...click con el mouse para abrir el diálogo de busqueda..."/>
                 </StackPanel>
             </Button>
         </Grid>

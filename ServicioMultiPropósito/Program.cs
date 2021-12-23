@@ -20,6 +20,6 @@ namespace ServicioMultiPropósito
                 new SERVICIOdeARCHIVOS()
             };
             ServiceBase.Run( ServicesToRun );
+        }
     }
-}
 }

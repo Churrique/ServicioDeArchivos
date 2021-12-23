@@ -90,6 +90,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Img\unistallerLP.xcf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,14 +102,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Img\1487716856-user-help_81637.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Img\openfile_11188.png" />
+    <Resource Include="Img\FolderOpen.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Img\equis-x.png" />
-    <Resource Include="Img\Folder-Delete256_24851.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Img\FolderDelete.png" />
@@ -117,14 +114,18 @@
     <Folder Include="Docs\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Img\Parche-B.ico" />
-    <Resource Include="Img\Windows-Logo-1-B.png" />
+    <Resource Include="Img\LogoAPP.ico" />
+    <Resource Include="Img\LogoAPP.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Img\clock-REC.ico" />
     <Resource Include="Img\clock-REC.png" />
     <Resource Include="Img\clock.ico" />
     <Resource Include="Img\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\uninstallerLP.ico" />
+    <Resource Include="Img\unistallerLP.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

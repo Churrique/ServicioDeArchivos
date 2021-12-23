@@ -39,8 +39,7 @@
             // 
             // serviceInstaller1
             // 
-            this.serviceInstaller1.Description = "Servicio multipropósito para Eliminar, Copiar o Mover un directorio en particular" +
-    ".";
+            this.serviceInstaller1.Description = "Servicio multipropósito para Eliminar, Copiar o Mover un directorio en particular.";
             this.serviceInstaller1.ServiceName = "SERVICIOdeARCHIVOS";
             this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
